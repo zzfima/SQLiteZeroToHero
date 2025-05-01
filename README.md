@@ -1,7 +1,6 @@
 # SQLiteZeroToHero
 SQLite Zero To Hero
 
-
 # SQLite Learning Path: From Zero to Hero (for C# Senior Engineers)
 
 ## Phase 1: Fundamentals of SQLite
