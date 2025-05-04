@@ -9,10 +9,11 @@ https://www.sqlitetutorial.net/
 
 1. In created test.db practice DDL commands for contacts table:
 1. edit database: sqlite3.exe .\test.db
-1. for creating table: CREATE TABLE contacts (contact_id INTEGER PRIMARY KEY, first_name TEXT NOT NULL, last_name TEXT NOT NULL, email TEXT NOT NULL UNIQUE, phone TEXT NOT NULL UNIQUE);
-1. for list tables: .tables
-1. for rename table: ALTER TABLE contacts RENAME TO contacts1;
-1. for delete table: DROP TABLE contacts
+1. creating table: CREATE TABLE contacts (contact_id INTEGER PRIMARY KEY, first_name TEXT NOT NULL, last_name TEXT NOT NULL, email TEXT NOT NULL UNIQUE, phone TEXT NOT NULL UNIQUE);
+1. list all tables: .tables
+1. table schema: .schema table_name
+1. rename table: ALTER TABLE contacts RENAME TO contacts1;
+1. delete table: DROP TABLE contacts
 
 ### 4. Data Manipulation Language (DML) (continue of previous 3)
 
