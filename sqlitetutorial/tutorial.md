@@ -49,12 +49,20 @@ chinook database:
 
 1. Order by column name ascending: *SELECT * FROM genres ORDER BY Names ASC;*
 1. Order by column name descending: *SELECT * FROM genres ORDER BY GenreId DESC;*
-1. Orders by column names: *SELECT GenreId, Name FROM tracks ORDER BY GenreId ASC, Name DESC;*
+1. Order by column names: *SELECT GenreId, Name FROM tracks ORDER BY GenreId ASC, Name DESC;*
 1. Order by column number: *SELECT * FROM genres ORDER BY 2;*
-1. Order by column names show nulls on the record top (in first rows will shown records where composer == NULL): *SELECT name, composer FROM tracks ORDER BY composer NULLS FIRST;*
-1. Order by column names show nulls on the record bottom  (in last rows will shown records where composer == NULL): *SELECT name, composer FROM tracks ORDER BY composer NULLS LAST;*
+1. Order by column names show nulls on the records top (in first rows will shown records where composer == NULL): *SELECT name, composer FROM tracks ORDER BY composer NULLS FIRST;*
+1. Order by column names show nulls on the records bottom  (in last rows will shown records where composer == NULL): *SELECT name, composer FROM tracks ORDER BY composer NULLS LAST;*
 
 ### Section 3. Filtering data
+
+#### Select Distinct
+
+1. remove duplicate cities from results: *SELECT DISTINCT city FROM customers;*
+1. remove duplicate pair city - country from results: *SELECT DISTINCT city, country FROM customers;*
+1. remove amount of NULLs:
+    1. get a lot of NULLs here: *SELECT company FROM customers;*
+    1. only one NULL is here: *SELECT DISTINCT company FROM customers;*
 
 ### Section 4. Joining tables
 
