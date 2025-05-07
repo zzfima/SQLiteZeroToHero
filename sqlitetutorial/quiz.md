@@ -8,18 +8,20 @@ SQLite Zero To Hero using www.sqlitetutorial.net
 
 ### SQLite Sample Database
 
-1. open db
+1. open db in one line
+1. open db from sqlite
 1. exit
 
 ### SQLite Commands
 
 1. add a database to the current connection
+1. remove a database from the current connection
 1. show all databases
 1. show all tables
 1. pattern matching show tables
 1. show schema of customers table
 1. show all schemas
-1. show index of customer table:
+1. show index of customer table
 1. show all indexes
 1. saving the result of a query into a file
 1. output back to the standard output

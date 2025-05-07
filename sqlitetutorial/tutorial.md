@@ -17,7 +17,8 @@ chinook database:
 
 ### SQLite Commands
 
-1. add a database to the current connection: *attach database "c:\sqlite\db\chinook.db" AS chinook;*
+1. add a database to the current connection: *attach database "c:\sqlite\db\secdb.db" AS secdb;*
+1. remove a database from the current connection: DETACH DATABASE secdb;
 1. show all databases: *.database*
 1. show all tables: *.table*
 1. pattern matching show tables: *.table '%es'*
