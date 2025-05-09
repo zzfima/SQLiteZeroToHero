@@ -65,6 +65,20 @@ chinook database:
     1. get a lot of NULLs here: *SELECT company FROM customers;*
     1. only one NULL is here: *SELECT DISTINCT company FROM customers;*
 
+#### WHERE
+
+1. Pattern matching: *SELECT * FROM albums WHERE title LIKE '%es';*
+1. UNIX pattern matching (like regular expression): *SELECT * FROM albums WHERE title GLOB '*[1-3]*';*
+1. In range (include border values): *SELECT * FROM albums WHERE ArtistId BETWEEN 50 AND 55;*
+1. Operator AND: *SELECT * FROM albums WHERE ArtistId > 50 AND ArtistId < 55;*
+1. IN (list of hardcoded values): *SELECT * FROM albums WHERE ArtistId IN (44, 55, 66);*
+1. NOT IN (list of hardcoded values): *SELECT * FROM artists WHERE ArtistId NOT IN (11, 22, 33);*
+1. IN (list as oputput of other query): *SELECT * FROM artists WHERE ArtistId IN (SELECT DISTINCT ArtistId FROM albums WHERE Title LIKE '%es' LIMIT 3);*
+1. Limit rows: *SELECT * FROM albums LIMIT 20;*
+1. NULL: *SELECT * FROM tracks WHERE Composer IS NULL LIMIT 10;*
+1. NOT NULL: *SELECT * FROM tracks WHERE Composer IS NOT NULL LIMIT 10;*
+1. 
+
 ### Section 4. Joining tables
 
 ### Section 5. Grouping data
